@@ -34,9 +34,9 @@ header {
 }
 
 .logo {
-  height: 50px;
-  width: 50px;
-  background-image: url("../images/Logo.webp");
+  height: 64px;
+  width: 64px;
+  background-image: url("../images/SREALOGO.svg");
   background-size: cover;
   background-position: center;
   border-radius: 8px;
