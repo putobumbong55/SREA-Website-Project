@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-
-  <!-- Circle -->
-  <circle cx="150" cy="150" r="90" fill="none" stroke="#07BEB8" stroke-width="6"/>
-
-  <!-- Turbine tower -->
-  <rect x="147" y="140" width="6" height="60" fill="#07BEB8"/>
-
-  <!-- Hub -->
-  <circle cx="150" cy="140" r="6" fill="#07BEB8"/>
-
-  <!-- Blades -->
-  <polygon points="150,140 158,50 142,50" fill="#07BEB8"/>
-  <polygon points="150,140 240,165 230,180" fill="#07BEB8"/>
-  <polygon points="150,140 60,180 70,165" fill="#07BEB8"/>
-
-  <!-- Small leaf -->
-  <ellipse cx="170" cy="190" rx="10" ry="16" fill="#9ABDD9" transform="rotate(30 170 190)"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(2.745098%,74.509805%,72.156864%);stroke-opacity:1;stroke-miterlimit:4;" d="M 239.995859 149.9997 C 239.995859 100.286665 199.712736 60.003542 149.9997 60.003542 C 100.286665 60.003542 60.003542 100.286665 60.003542 149.9997 C 60.003542 199.712736 100.286665 239.995859 149.9997 239.995859 C 199.712736 239.995859 239.995859 199.712736 239.995859 149.9997 Z M 239.995859 149.9997 " transform="matrix(0.213334,0,0,0.213334,0,0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.745098%,74.509805%,72.156864%);fill-opacity:1;" d="M 31.359375 29.863281 L 32.640625 29.863281 L 32.640625 42.664062 L 31.359375 42.664062 Z M 31.359375 29.863281 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.745098%,74.509805%,72.156864%);fill-opacity:1;" d="M 33.28125 29.863281 C 33.28125 29.160156 32.703125 28.585938 32 28.585938 C 31.296875 28.585938 30.71875 29.160156 30.71875 29.863281 C 30.71875 30.574219 31.296875 31.144531 32 31.144531 C 32.703125 31.144531 33.28125 30.574219 33.28125 29.863281 Z M 33.28125 29.863281 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.745098%,74.509805%,72.156864%);fill-opacity:1;" d="M 32 29.863281 L 33.703125 10.664062 L 30.296875 10.664062 Z M 32 29.863281 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.745098%,74.509805%,72.156864%);fill-opacity:1;" d="M 32 29.863281 L 51.199219 35.199219 L 49.066406 38.398438 Z M 32 29.863281 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(2.745098%,74.509805%,72.156864%);fill-opacity:1;" d="M 32 29.863281 L 12.800781 38.398438 L 14.933594 35.199219 Z M 32 29.863281 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(60.392159%,74.117649%,85.09804%);fill-opacity:1;" d="M 38.113281 41.601562 C 39.054688 39.964844 38.996094 38.164062 37.976562 37.574219 C 36.953125 36.988281 35.359375 37.835938 34.421875 39.464844 C 33.476562 41.101562 33.539062 42.898438 34.558594 43.488281 C 35.578125 44.078125 37.171875 43.234375 38.113281 41.601562 Z M 38.113281 41.601562 "/>
+</g>
 </svg>
