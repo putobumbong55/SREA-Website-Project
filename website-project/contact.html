@@ -1,18 +1,28 @@
+<!-- this contact page is created by Lei -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- meta tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- google font  -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!-- stylesheet -->
   <link rel="stylesheet" href="css/site.css" />
-  <title>Contact</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <title> Contact Us </title>
+  
 </head>
 
 <body class="Contact">
   <div id="wrapper">
     <header>
-      <div class="logo"></div>
-
+      <!-- got rid of this: <div class="logo">
+      
     <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -21,14 +31,132 @@
     <a href="hydro.html">Hydro</a>
     <a class="this-page" href="contact.html">Contact</a>
 </nav>
+    </div>-->
+      
+      <!-- nav from bootstrap -->   
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/SREALOGO.svg" alt="SREA Logo" width="45" height="45">
+                <div class="brand-text">
+                    <span class="brand-name">SREA</span>
+                    <span class="brand-full">Scottish Renewable Energy Association</span>
+                </div>
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="wind.html">Wind Power</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="solar.html">Solar Power</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="hydro.html">Hydro Power</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
 
     <main>
-      
+      <section class="contact-section">
+    <!-- left column -->
+        <div class="contact-column1">
+            <h1> Contact Us</h1>
+                <img src="img/young-happy-businesswoman-working-computer-listening-music-headphones-office-her-colleagues-are-working-background.jpg" alt="smiling employee answering a call">
+            <h2> Get in Touch</h2>
+                <p> Connect with us by one of the following methods: </p>
+                    <ul class="contact-details">
+                        <li><strong>Phone:</strong> <a href="tel:+4733378901">+47 333 78 901</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:SREA@outlook.com">SREA@outlook.com</a></li>
+                        <!-- social media icons -->
+                        <li><strong>Follow Us:</strong><br>
+                            <a href="https://www.facebook.com/SREA" target="_blank"><img src="img/facebook-brands-solid.png" alt="Facebook"></a>
+                            <a href="https://www.twitter.com/SREA" target="_blank"><img src="img/x-twitter-brands-solid.png" alt="X(Twitter)"></a>
+                            <a href="https://www.instagram.com/SREA" target="_blank"><img src="img/instagram-brands-solid.png" alt="Instagram"></a>
+                        <li><strong>Address:</strong><br>
+                            Energy Saving Trust, Prospect House,<br> 
+                            5 Thistle Street, Edinburgh, EH2 1DF
+                        </li>
+                    </ul>
+        </div>
+
+            <!-- Right Column -->
+      <div class="contact-column2">
+          <h2>Send Us a Message</h2>
+          
+          <form id="contact-form" action="submit_form.php" method="post" class="contact-form">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+  
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required>
+  
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+  
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  
+  </section>
+
+  <!-- Map Section (Full width below contact form) -->
+  <section class="map-section">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.6974914404364!2d-3.1961595999999997!3d55.954614899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b97622254ed5%3A0x61c42b014dcaac48!2sEnergy%20Saving%20Trust%20Scotland!5e0!3m2!1sen!2suk!4v1775509104867!5m2!1sen!2suk" 
+          width="100%" 
+          height="350" 
+          style="border:0; border-radius: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+  </section>
     </main>
 
     <footer>
+      <!-- old footer:
       <p>Site Design: <b>names</b> - Edinburgh College - <i>2026</i></p>
+      <p>This site was created for educational purposes only.</p>
+      -->
+      <div class="footer-container">
+        <div class="footer-logo">
+            <a href="index.html"> <img src="img/SREALOGO.svg" alt="SREA Logo"> </a>
+            <a href="index.html" class="logo-text"> SREA </a>
+        </div>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="wind.html">Wind Power</a>
+            <a href="solar.html">Solar Power</a>
+            <a href="hydro.html">Hydro Power</a>
+        </div>
+        <div class="footer-contact">
+            <p><a href="tel:+44 123 456 789">+47 333 78 901</a></p>
+            <p><a href="mailto:SREA@outlook.com"> SREA@outlook.com </a></p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/SREA" target="_blank"><img src="img/facebook-brands-solid.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com/SREA" target="_blank"><img src="img/x-twitter-brands-solid.png" alt="X(Twitter)"></a>
+            <a href="https://www.instagram.com/SREA" target="_blank"><img src="img/instagram-brands-solid.png" alt="Instagram"></a>
+        </div>
+    </div>
+      <p>Site Design by: <b>Lei Loquias</b> - Edinburgh College - <i>2026</i></p>
       <p>This site was created for educational purposes only.</p>
     </footer>
   </div>
