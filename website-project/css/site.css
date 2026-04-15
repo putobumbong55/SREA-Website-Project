@@ -42,6 +42,7 @@ header {
   border-radius: 8px;
 }
 
+/* old nav styles:
 nav {
   display: flex;
   gap: 15px;
@@ -59,6 +60,77 @@ nav a {
 nav a:hover, .this-page {
   background-color: rgba(255, 255, 255, 0.3);
 }
+*/
+
+/* NEW NAV STYLES */
+/* navigation styles is from bootstrap but will override some styles... */
+
+/* Override the default Bootstrap background color */
+.navbar.bg-light {
+    background-color: #9abdd9 !important;
+}
+/* Navbar brand (logo + text) */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #060606;
+}
+
+.brand-full {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #060606;
+}
+
+.navbar-nav {
+    margin-left: auto; /* right-aligns the nav links */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: #060606 !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(63, 107, 200) !important;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+    color: white !important;
+}
+
+/* resonsive styles specifically for logo text */
+@media (max-width: 768px) {
+    .brand-full {
+        display: none;  /* Hide text on mobile */
+    }
+}
+
+
+/* Mobile toggler button */
+.navbar-toggler { /* Remove default border and background for cleaner look for hamburger collapse thing */
+    border: none !important;
+}
+
+/* end of nav styles */
 
 .container {
   position: relative;
@@ -136,6 +208,7 @@ ul {
   padding: 5px;          
 }
 
+/* old footer styles 
 footer {
   background-color: #9abdd9;
   padding: 2rem;
@@ -143,6 +216,138 @@ footer {
   width: 100%;
   margin-top: auto; 
 }
+*/
+
+/* NEW FOOTER STYLES */
+
+/* footer styles */
+footer {
+    background-color: #9abdd9;
+    color: #060606;
+    padding: 20px 40px;
+    margin-top: 50px;
+
+}
+
+.footer-container { /* for the 3-column layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* left column */
+.footer-logo {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 45px;
+    height: 45px;
+    display: block;
+}
+
+.footer-logo .logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #060606;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* middle column - page links */
+.footer-links {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;    /* allows links to wrap to next line on smaller screens to make it look nicer */
+    justify-content: center; 
+    gap: 10px 20px;   
+}
+
+.footer-links a, .footer-contact a {
+    color: #060606;
+    text-decoration: none;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* middle column with contact info */
+.footer-contact {
+    flex: 1;
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid rgba(6, 6, 6, 0.3);
+}
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* right column */
+.social-media {
+    flex: 1;
+    text-align: right;
+}
+
+.social-media a {
+    margin-left: 15px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    transition: opacity 0.3s;
+}
+
+.social-media img:hover {
+    opacity: 0.7;
+}
+
+/* at the very bottom */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(6, 6, 6, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-logo, .footer-links, .footer-contact, .social-media {
+        flex: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer-contact {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+/* end of footer styles */
 
 /* CONTACT PAGE STYLES */
 
