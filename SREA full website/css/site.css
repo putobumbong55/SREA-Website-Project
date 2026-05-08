@@ -51,14 +51,7 @@ header {
   z-index: 1000;
 }
 
-.logo {
-  height: 64px;
-  width: 64px;
-  background-image: url("../images/SREALOGO.svg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-}
+
 /* end of general reset and base styles */
 
 /* NAVBAR STYLES with FIXED NAVBAR & CUSTOM STYLES overriding bootstrap by Lei*/
@@ -288,7 +281,7 @@ ul {
 
 /* WIND PAGE STYLES by Artem */
 .hero-wind {
-  background-image: url('/images/windhero.jpg');
+  background-image: url('../images/windhero.jpg');
   background-color: #595858;
   opacity: 1;
   background-blend-mode: overlay; /* darkens the image for better text contrast */
@@ -447,7 +440,7 @@ ul {
 /* HYDRO PAGE STYLES by Saffia */
 
 .hero-hydro {
-  background-image: url('/images/hydrohero.jpg');
+  background-image: url('../images/hydrohero.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -524,7 +517,7 @@ ul {
 
 /* ABOUT US STYLES by Eddie*/
  .about-hero{
-  background-image: url('/images/group.jpg');
+  background-image: url('../images/group.jpg');
   background-color: #595858;
   opacity: 1;
   background-blend-mode: overlay; /* darkens the image for better text contrast */
@@ -555,7 +548,7 @@ ul {
 }
 
 .mission-section {
-  background-image: url('/images/mission-bg.jpg');
+  background-image: url('../images/mission-bg.jpg');
   background-color: #595858;
   opacity: 1;
   background-blend-mode: overlay; /* darkens the image for better text contrast */
@@ -725,7 +718,7 @@ ul {
 /* SOLAR PAGE STYLES by Eddie */
 
 .hero-solar {
-  background-image: url('/images/solar-background.jpg');
+  background-image: url('../images/solar-background.jpg');
   background-color: #595858;
   opacity: 1;
   background-blend-mode: overlay; /* darkens the image for better text contrast */
@@ -744,7 +737,7 @@ ul {
 
 /* CONTACT PAGE STYLES by Lei */
 .hero-contact {
-  background-image: url('/images/young-happy-businesswoman-working-computer-listening-music-headphones-office-her-colleagues-are-working-background.jpg');
+  background-image: url('../images/young-happy-businesswoman-working-computer-listening-music-headphones-office-her-colleagues-are-working-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
