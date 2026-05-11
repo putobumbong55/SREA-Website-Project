@@ -1,4 +1,4 @@
-<!-- this contact page is created by Zachary -->
+<!-- this page is created by Zachary -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +9,7 @@
     <title> SREA Home Page </title> 
     <!-- favicon -->
     <link rel="icon" href="images/SREALOGO2.png" type="image/png">
-
+    
     <!-- links -->
     <link rel="stylesheet" href="css/site.css">
 
@@ -28,14 +28,15 @@
 <header>
 <!-- nav from bootstrap -->   
 <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
+     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img src="images/SREALOGO2.png" alt="SREA Logo" width="45" height="45"> </a>
-        <a class="navbar-brand" href="index.html">SREA</a>
+            <img src="images/SREALOGO2.png" alt="SREA Logo" width="45" height="45">
+            SREA
+        </a>
             <span class="brand-full"> Scottish Renewable Energy Association</span>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span> <!-- the hamburger icon -->
-    </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span> <!-- the hamburger icon -->
+            </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -63,64 +64,80 @@
     </div>
 </nav>
 </header>
-    <section class="hero-home">
-        <h1> HOME PAGE</h1>
-    </section>
 
-    <main>
-      <div class="slideshow-container">
+<main>
+    <!-- hero section with carousel + overlay heading text -->
+    <div class="hero-carousel-container">
+    
+        <!-- carousel from bootstrap -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/dam.png" class="d-block w-100" alt="Renewable energy dam">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/wind-turbines2.jpg" class="d-block w-100" alt="Wind turbines in a field">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/solar_rocks.jpg" class="d-block w-100" alt="Solar panels at sunset">
+                    </div>
+                </div>
+        </div>
 
-<div class="mySlides">
-  <img class="imgSlide" src="images/9a4mvfgg.png" style="width:100%">
-</div>
+        <!-- carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-<div class="mySlides">
-  <img class="imgSlide" src="images/6zlj1qlb.png" style="width:100%">
-</div>
+        <!-- overlay heading text (centered over carousel) -->
+        <div class="carousel-overlay">
+            <h1>SREA</h1>
+                <p class="overlay-description">Empowering Scotland with clean, accessible, and sustainable energy education for all.</p>
+                    <a href="contact.html" class="overlay-btn">Get Involved →</a>
+        </div>
+    </div>
 
-<div class="mySlides">
-  <img class="imgSlide" src="images/bs9s9jqy.png" style="width:100%">
-</div>
 
-<div class="text">
-  <p class="homeTitle">SPEA</p>
-  <p class="homeUndertitle">Scottish Renewwable Energy Association </p>
-</div>
-</div>
-</section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<!-- goals-->
-<section">
-  <h1>What is our goal?</h1>
-  <p>At SREA, our goal is to empower individuals, communities, and future generations with the knowledge and confidence to embrace clean, renewable energy. We are an eco-conscious association dedicated to raising awareness and understanding of hydro, solar, and wind energy as essential solutions for a sustainable future.</p>
-  <p>We aim to make renewable energy education accessible, practical, and engagung while helping people understand not only how these technologies work, but also how they can be applied in everyday life. Through workshops, resources, and community initiatives, we strive to inspire informed choices that reduce environmental impact and support a transition away from fossil fuels.</p>  
-  <p>Ultimately, SREA exists to build a more sustainable world by encouraging learning, innovation, and collective action in renewable energy.</p>
-</section>     
+<!-- goals section -->
+<section class="content-wrapper">
+  <h2>What  Is Our Goal?</h2>
+        <p>At SREA, our goal is <b>to empower individuals, communities, and future generations with the knowledge and confidence to embrace clean, renewable energy. </b>We are an eco-conscious association dedicated to raising awareness and understanding of hydro, solar, and wind energy as essential solutions for a sustainable future.</p>
+        <p>We aim to make renewable energy education accessible, practical, and engaging while helping people understand not only how these technologies work, but also how they can be applied in everyday life. Through workshops, resources, and community initiatives, we strive to inspire informed choices that reduce environmental impact and support a transition away from fossil fuels.</p>
+        <p>Ultimately, SREA exists to build a more sustainable world by encouraging learning, innovation, and collective action in renewable energy.</p>
+    </section>    
   
+<!-- cards section -->
 <div class="homeBody">
- <section class="card-wrapper">
-    <div class="simple-card">
-      <img src="images/windTurbine.jpg" alt="Wind">
-      <h3>wind power</h3>
-      <p>Wind turbines turn the wind’s energy into electricity by spinning blades connected to a generator, providing clean, renewable power.</p>
-      <a class="internBTN" href="wind.html">Wind Page</a>
-    </div>
+        <section class="card-wrapper">
+            <div class="simple-card">
+                <img src="images/wind-turbines2.jpg" alt="Wind turbine">
+                <h3>Wind Power</h3>
+                <p>Wind turbines turn the wind's energy into electricity by spinning blades connected to a generator, providing clean, renewable power.</p>
+                <a class="internBTN" href="wind.html">Learn More →</a>
+            </div>
 
-    <div class="simple-card">
-      <img src="images/solar_rocks.jpg" alt="Solar">
-      <h3>solar energy</h3>
-      <p>olar power is energy from the sun that is captured using solar panels and converted into electricity for homes, businesses, and other uses as a clean and renewable energy source.</p>
-      <a class="internBTN" href="solar.html">solar page</a>
-    </div>
+            <div class="simple-card">
+                <img src="images/solar_rocks.jpg" alt="Solar panels">
+                <h3>Solar Energy</h3>
+                <p>Solar power is energy from the sun that is captured using solar panels and converted into electricity for homes, businesses, and other uses as a clean and renewable energy source.</p>
+                <a class="internBTN" href="solar.html">Learn More →</a>
+            </div>
 
-    <div class="simple-card">
-      <img src="images/dam.png" alt="Hydro">
-      <h3>hydro power</h3>
-      <p>Hydro power is electricity generated by using the force of moving water, usually from rivers or dams, to spin turbines connected to generators, producing clean and renewable energy.</p>
-      <a class="internBTN" href="hydro.html">hydro page</a>
-    </div>
-    </main>
+            <div class="simple-card">
+                <img src="images/dam.png" alt="Hydro power dam">
+                <h3>Hydro Power</h3>
+                <p>Hydro power is electricity generated by using the force of moving water, usually from rivers or dams, to spin turbines connected to generators, producing clean and renewable energy.</p>
+                <a class="internBTN" href="hydro.html">Learn More →</a>
+            </div>
+        </section>
+</div>
+</main>
 
 <footer>
     <div class="footer-container">
@@ -137,7 +154,7 @@
             <a href="hydro.html">HYDRO</a>
         </div>
         <div class="footer-contact">
-            <p><a href="tel:+44 123 456 789">+47 333 78 901</a></p>
+            <p><a href="tel:+4433378901">+44 333 78 901</a></p>
             <p><a href="mailto:SREA@outlook.com"> SREA@outlook.com </a></p>
         </div>
         <div class="social-media">
